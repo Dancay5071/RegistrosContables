@@ -19,6 +19,6 @@ function fecha() {
     let mes = fecha.getMonth() + 1;
     let anio = fecha.getFullYear();
     let fechaCompleta = dia + '/' + mes + '/' + anio;
-    hoy.innerHTML = "Hoy es: " + fechaCompleta;
+    hoy.innerHTML = "Dia de hoy : " + fechaCompleta;
 }
 fecha();
