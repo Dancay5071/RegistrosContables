@@ -25,11 +25,16 @@
   <header>
   
   <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+   
       <div class="container-fluid">
           
       
         <div class="collapse navbar-collapse" id="navbarScroll">
+         
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+           <li class="nav-item">
+              <img src="./imagenes/animal(4).png" alt="">
+            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Ingresos
@@ -80,7 +85,13 @@
         <button onclick="oculto(ingresos)">Actualizar</button>
       </div>
 
-      <div id="gastos">
+      <div id="gastos" >
+        <label for="TipoGasto">Tipo de gasto:</label>
+        <select name="Tipo de gasto" id="TipoGasto"> 
+          <option value="1">Gasto fijo</option>
+          <option value="2">Gasto diario</option>
+          <option value="3">Gasto extra</option>
+        </select>
         <div>Descripción del gasto: <input type="text" id="desgastos"></div>
         <div>Actualizar gastos: $ <input type="number" id="actgastos"></div>
         <div>Fecha: <input type="date" id="fechagastos"></div>
