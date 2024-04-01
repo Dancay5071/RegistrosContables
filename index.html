@@ -23,6 +23,7 @@
 <body>
 
   <header>
+  
   <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
           
@@ -34,8 +35,8 @@
                 Ingresos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Actualizar</a></li>
-                <li><a class="dropdown-item" href="#">Consultar</a></li>
+                <li><a class="dropdown-item" href="#" onclick="visible(ingresos),oculto(gastos,colchon)">Actualizar</a></li>
+                <li><a class="dropdown-item" href="#" onclick="">Consultar</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -43,7 +44,7 @@
                 Gastos
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Actualizar</a></li>
+                <li><a class="dropdown-item" href="#"onclick="visible(gastos),oculto(ingresos,colchon)">Actualizar</a></li>
                 <li><a class="dropdown-item" href="#">Consultar</a></li>
               </ul>
             </li>
@@ -52,7 +53,7 @@
                 Colchon
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Actualizar</a></li>
+                <li><a class="dropdown-item" href="#" onclick="visible(colchon),oculto(gastos,ingresos)">Actualizar</a></li>
                 <li><a class="dropdown-item" href="#">Consultar</a></li>
               </ul>
             </li>
@@ -70,12 +71,33 @@
         </form>
       </nav>
     </nav>
-    
-    
+    <section>
+      
+      <div id="ingresos">
+        <div>Descripción del ingreso: <input type="text" id="desIngresos"></div>
+        <div>Actualizar ingresos: $ <input type="number" id="actIngresos"></div>
+        <div>Fecha: <input type="date" id="fechaIngresos"></div>
+        <button onclick="oculto(ingresos)">Actualizar</button>
+      </div>
+
+      <div id="gastos">
+        <div>Descripción del gasto: <input type="text" id="desgastos"></div>
+        <div>Actualizar gastos: $ <input type="number" id="actgastos"></div>
+        <div>Fecha: <input type="date" id="fechagastos"></div>
+        <button onclick="oculto(gastos)">Actualizar</button>
+      </div>
+
+      <div id="colchon">
+        <div>Actualizar colchon: $ <input type="number" id="actgastos"></div>
+        <div>Fecha: <input type="date" id="fechagastos"></div>
+        <button onclick="oculto(colchon)">Actualizar</button>
+      </div>
+    </section>
+   
   </header>
 
   <footer>
-    <div class="monto">Monto actual:</div>
+    <div class="monto">Monto actual: $</div>
     
     
   

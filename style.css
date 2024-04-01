@@ -1,5 +1,5 @@
 .monto{
-    position: fixed;
+    position:absolute;
     background-color: #2b3035;
     color: aliceblue;
     text-align: center;
@@ -8,4 +8,17 @@
     width: 300px;
     height: 35px;
     font-size: 20px;
+    justify-content: space-around;
+}
+#ingresos{
+    visibility: hidden;
+    position: absolute;
+}
+#gastos{
+    visibility: hidden;
+    position: absolute;
+}
+#colchon{
+    visibility: hidden;
+    position: absolute;
 }
