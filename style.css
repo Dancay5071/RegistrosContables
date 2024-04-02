@@ -26,4 +26,15 @@ img{
     visibility: hidden;
     position: absolute;
 }
-
+#consultaIng{
+    visibility: hidden;
+    position: absolute;
+}
+#consultaGast{
+    visibility: hidden;
+    position: absolute;
+}
+#consultaCol{
+    visibility: hidden;
+    position: absolute;
+}

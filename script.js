@@ -26,26 +26,61 @@ function visible(elem){
   switch (elem) {
     case ingresos:
 
-         oculto(gastos);
+        oculto(gastos);
         oculto(colchon);
+        oculto(consultaIng);
+        oculto(consultaGast);
+        oculto(consultaCol);
         console.log("ingresos esta visible y se ocultan los gastos y el colchon")
         break;
   
         case gastos:
 
         oculto(ingresos);
-        oculto(colchon)
+        oculto(colchon);
+        oculto(consultaIng);
+        oculto(consultaGast);
+        oculto(consultaCol);
         console.log("gastos esta visible y se ocultan los ingresos y el colchon")
         break;
         case colchon:
             oculto(ingresos);
-            oculto(gastos)
+            oculto(gastos);
+            oculto(consultaIng);
+            oculto(consultaGast);
+            oculto(consultaCol);
             console.log("colchon esta visible y se ocultan los ingresos y los gastos")
+            break;
+
+        case consultaIng:
+            oculto(ingresos);
+            oculto(gastos);
+            oculto(colchon);
+            oculto(consultaGast);
+            oculto(consultaCol);
+            break;
+        case consultaGast:
+            oculto(ingresos);
+            oculto(colchon);
+            oculto(gastos);
+            oculto(consultaIng);
+            oculto(consultaCol);
+            break;
+        case consultaCol:
+            oculto(ingresos);
+            oculto(gastos);
+            oculto(colchon);
+            oculto(consultaIng);
+            oculto(consultaGast);
             break;
     default:
         oculto(ingresos);
         oculto(gastos);
-        oculto(colchon)
+        oculto(colchon);
+        oculto(consultaIng);
+        oculto(consultaGast);
+        oculto(consultaCol);
+        break;
   }
   
   
