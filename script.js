@@ -85,7 +85,13 @@ function visible(elem){
   
   
 }
-
+$('#yourId').jalendar({color: '#fff',
+type: 'linker',
+customUrl: 'http://yourcustomurl.com/yourcustomurl?var=',
+dateType: 'mm-dd-yyyy',
+titleColor: '#666',
+weekColor: '#EA5C49',
+todayColor: '#EA5C49'});
   
  
 
